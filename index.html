@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickEats Ghana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>QuickEats Ghana 🇬🇭</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-items"></div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <p>Total: <span id="total">₵0.00</span></p>
+            <button id="checkout">Go to Order</button>
+        </section>
+
+        <section id="order">
+            <h2>Delivery Details</h2>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+
+                <button type="submit">Place Order</button>
+            </form>
+            <p id="order-message"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</body>
+</html>
